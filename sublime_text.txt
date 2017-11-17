@@ -1,0 +1,10 @@
+{
+    "font_size": 20.0,
+    "highlight_line": true,
+    "highlight_modified_tabs": true,
+    "open_files_in_new_window": false,
+    "scroll_past_end": true,
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+    "word_wrap": true
+}
