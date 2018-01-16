@@ -1,0 +1,10 @@
+# Setting up git user alias in ssh-config:
+Host PuchatekwSzortach.github.com
+    HostName github.com
+    User PuchatekwSzortach
+    PreferredAuthentications publickey
+    IdentityFile ... # path to identity file
+    IdentitiesOnly yes
+
+# Cloning a repository with user set:
+git clone git@PuchatekwSzortach.github.com:sample_user/sample_project.git
