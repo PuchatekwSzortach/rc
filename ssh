@@ -1,0 +1,7 @@
+# Setting up ssh alias, so you can log just with
+# `ssh sample_host`
+Host sample_host
+    HostName 192.168.xxx.yyy
+    User kuba
+    IdentityFile ...
+    IdentitiesOnly yes
