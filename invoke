@@ -1,0 +1,17 @@
+# tasks.py
+
+import invoke
+
+@invoke.task
+def commit_stage(_context):
+
+    pass
+
+
+tests_collection = invoke.collection.Collection("tests")
+tests_collection.add_task(commit_stage)
+
+
+# Note - name `ns` is important - invoke will recognize only that name as default collection
+ns = invoke.Collection()
+ns.add_collection(tests_collection)
