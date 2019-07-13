@@ -1,0 +1,14 @@
+[Unit]
+Description=mlflow service
+After=network.target
+
+[Service]
+User=mlflow
+Group=www-data
+WorkingDirectory=/home/mlflow/mlflow_server
+Environment="PATH=/home/mlflow/anaconda3/envs/mlflow_env/bin"
+Environment="PYTHONPATH=."
+ExecStart=/home/mlflow/anaconda3/envs/mlflow_env/bin/mlflow ui --port 4000
+
+[Install]
+WantedBy=multi-user.target
